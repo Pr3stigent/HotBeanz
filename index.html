@@ -4,34 +4,81 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fav2cun.css">
 </head>
 <body>
     <nav class="nav-bar">
-        <div class="company-info">
-            <img width="70" height="70" src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5be01d787b5e5b0001ebb6bb/0x0.png"/>
-            <p> Company Name</p>
+        <div class="nav-bar-container">
+            <div class="company-info">
+                <a href="https://www.qries.com/">
+                    <img 
+                        alt="Qries" 
+                        src="https://www.freepnglogos.com/uploads/playstation-png-logo/andtoid-playstation-png-logo-24.png"
+                        width=100"
+                        height="70"
+                    />
+                 </a>
+                <a class="company-text">Hot Beans</a>
+            </div>
+            <ul class="link-container nav-option-screen-size-700">
+                <li style="color: white" class="option-item"><a>Apply Now</a></li>
+                <li class="option-item"><a onclick="myFunction()">Search</a></li>
+                <li class="option-item"><a>About Us</a></li>
+                <li class="option-item"><a>FAQ</a></li>
+                <li class="option-item login-button"><a>Login</a></li>
+            </ul>
+            <a class="hamburger hamburger-screen-size" href="https://www.qries.com/">
+                <img 
+                    alt="Qries" 
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png"
+                    width=40"
+                    height="40"
+                />
+             </a>
         </div>
-        <li class="denial">
-            <a onclick="myFunction()">Search</a>
-            <a>Apply Now</a>
-            <a>About Us</a>
-            <a>FAQ</a>
-            <a>Login</a>
-        </li>
     </nav>
     <section class="section">
-        <div class="first-section">
-            <img width="100"  height="100" src="data:image/jpeg;base64,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"/>
-
+        <div class="first-section-container">
+            <div class="first-texts-container">
+                <h1 class="motivation-text">
+                    Learn without limits
+                </h1>
+                <p style="font-size: larger; text-align: center; margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                    Start, switch, or advance your career with more than 5,400 courses, Professional Certificates, and degrees from world-class universities and companies.
+                </p>
+                <ul class="first-section-options-container first-section-options-container-screen-size-950">
+                    <li class="get-started"><a>Get Started</a></li>
+                    <li class="">
+                        <div class="search-background search-background-screen-size-950">
+                            <img 
+                                width="30"
+                                height="30"
+                                src="https://static.thenounproject.com/png/424995-200.png"
+                            />
+                            <input class="search-input" autocomplete="off" autocapitalize="off" placeholder="Search"type="search"/>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="first-section-image">
+                <img
+                    width="300"  
+                    height="400" 
+                    src="https://www.pngmart.com/files/1/Kids-Learning-PNG-File.png"
+                />
+            </div>
         </div>
+    
     </section>
 </body>
 </html>
-
-
 
 <script>
 function myFunction() {
   console.log("brah")
 }
 </script>
+
+<!-- 
+    
+ -->
